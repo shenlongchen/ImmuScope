@@ -1,0 +1,19 @@
+mhc_seq: data/raw/pseudosequence.2023.dat
+dataset_id_mhc: data/raw/allelelist
+
+dataset_ms: data/5cv_MS_h5py
+5cv_ma: data/5cv_MA_h5py/5cv_.h5
+5cv_sa: data/5cv_SA_h5py/5cv_.h5
+
+train_ba: data/train_test_h5py/ba_train.h5
+train_sa: data/train_test_h5py/sa_train.h5
+train_ma: data/train_test_h5py/ma_train.h5
+
+test: data/train_test_h5py/NetMHCIIpan_eval.h5
+
+train_imm: data/imm/imm_train.h5
+test_imm: data/imm/imm_test.h5
+
+logs: results/logs
+results: results
+

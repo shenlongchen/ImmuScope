@@ -1,0 +1,35 @@
+name: ImmuScope
+path: weights
+seed: 2024
+
+model:
+  bag_size: 10
+  emb_size: 16
+  conv_size: [ 9 ]
+  conv_num: [ 64 ]
+  conv_off: [ 3 ]
+  dropout: 0.25
+  peptide_pad: 3
+
+padding:
+  peptide_len: 21
+  peptide_pad: 3
+  mhc_len: 34
+
+binding:
+  peptide_len: 24
+  peptide_pad: 3
+  mhc_len: 34
+
+train:
+  num_epochs: 20
+  batch_size: 128
+  opt_params:
+    lr: 3e-5
+    wd: 1e-4
+
+valid:
+  batch_size: 1024
+
+test:
+  batch_size: 1024
