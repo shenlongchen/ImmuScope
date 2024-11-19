@@ -91,9 +91,8 @@ The following data and model weights are available at [Zenodo](https://zenodo.or
 ### Citation
 
 ```tex
-
-Long-Chen Shen, Yumeng Zhang, Zhikang Wang, Yan Liu, Jinghui Tang, Jiangning Song, and Dong-Jun Yu. Unified framework utilizing self-iterative multiple instance learning for predicting CD4+ T cell immunogenic epitope
-
+Long-Chen Shen, Yumeng Zhang, Zhikang Wang, Yan Liu, Jinghui Tang, Jiangning Song, and Dong-Jun Yu. Unified framework
+utilizing self-iterative multiple instance learning for predicting CD4+ T cell immunogenic epitope
 ```
 
 ### Contact

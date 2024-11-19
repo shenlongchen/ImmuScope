@@ -66,6 +66,8 @@ def main(data_cnf, model_cnf, start_id, num_models):
     model_name = model_cnf["name"]
     model_path = Path(os.path.join(Path(model_cnf['path']), 'EL', f'{model_name}.pt'))
     res_path = Path(data_cnf['results']) / f'{model_name}'
+    res_path.mkdir(parents=True, exist_ok=True)
+
     mhc_name_seq = get_mhc_name_seq(data_cnf['mhc_seq'])
 
     all_models_scores, all_models_labels = [], []

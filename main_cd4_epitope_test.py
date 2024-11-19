@@ -57,9 +57,13 @@ def main(data_cnf, model_cnf, start_id, num_models):
     pred_mean = np.mean(np.array(pred_instances_models), axis=0)
     label_mean = np.mean(np.array(labels_models), axis=0)
     df_pred = pd.DataFrame({'protein': protein_ids, 'pred': pred_mean, 'label': label_mean})
-    df_pred.to_csv(f'results/ImmuScope-CD4/results_pred_protein_avg.csv', index=False)
+
+    saved_path = Path(data_cnf['results']) / 'ImmuScope-CD4'
+    saved_path.mkdir(parents=True, exist_ok=True)
+
+    df_pred.to_csv(f'{saved_path}/results_pred_protein_avg.csv', index=False)
     median_auc, mean_auc, avg_auc, res_df = calculate_auc_base_protein(protein_ids, pred_mean, label_mean)
-    res_df.to_csv(f'results/ImmuScope-CD4/results_auc_protein_avg.csv', index=False)
+    res_df.to_csv(f'{saved_path}/results_auc_protein_avg.csv', index=False)
     logger.info('|**========== TEST: Median AUC: {:.4f}; Mean AUC: {:.4f}; AVG AUC: {:.4f}==========**|'.
                 format(median_auc, mean_auc, avg_auc))
 

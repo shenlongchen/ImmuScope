@@ -36,6 +36,7 @@ def load_config_and_setup_logging(data_cnf, model_cnf, logger_name='ImmuScope'):
     # log file setting
     timestamp = datetime.now().strftime("%y-%m-%d_%H-%M-%S")
     logger_path = Path(os.path.join(data_cnf['logs'], f'{model_cnf["name"]}_{timestamp}.log'))
+    logger_path.parent.mkdir(parents=True, exist_ok=True)
 
     logger = logging.getLogger(logger_name)
     logger.setLevel(logging.DEBUG)

@@ -47,6 +47,7 @@ def main(data_cnf, model_cnf, start_id, num_models):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model_name = model_cnf["name"]
     result_path = Path.joinpath(Path(data_cnf['results']), model_name)
+    result_path.mkdir(parents=True, exist_ok=True)
 
     imm_model_path = Path(os.path.join(Path(model_cnf['path']), 'IM', f'{model_name}.pt'))
 

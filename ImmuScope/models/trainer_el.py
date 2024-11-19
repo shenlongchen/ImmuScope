@@ -14,6 +14,7 @@ from tqdm import tqdm
 from ..datasets.datasets import SinInstanceBag
 from .losses import SupConLoss, TripletLoss
 from ..utils.utils import *
+from ..utils.data_utils import *
 
 
 class Trainer(object):

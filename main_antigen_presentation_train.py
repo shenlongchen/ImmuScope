@@ -68,6 +68,7 @@ def main(data_cnf, model_cnf, start_id, num_models):
 
     scores_all, labels_all = [], []
     res_path = Path(data_cnf['results']) / f'{model_name}'
+    res_path.mkdir(parents=True, exist_ok=True)
 
     for model_id in range(start_id, start_id + num_models):
         logger.info(f'------------- Start training model_id: {model_id} -  ------------')
@@ -75,7 +76,7 @@ def main(data_cnf, model_cnf, start_id, num_models):
 
         loader = get_data_loader(data_cnf, mhc_name_seq, model_cnf)
 
-        train_path_ms = Path(os.path.join("data/train_test_h5py/ms_tmp_dataset", f"{model_name}_{model_id}_train.h5"))
+        train_path_ms = Path(os.path.join(data_cnf["dataset_ms"], f"{model_name}_{model_id}_train.h5"))
         res_path_with_id = Path(res_path, f'{model_name}-{model_id}')
 
         trainer = Trainer(ImmuScope, model_path=path_, device=device, logger=logger, **model_cnf['model'])
