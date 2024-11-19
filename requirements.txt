@@ -1,0 +1,8 @@
+click==8.0.4
+h5py==3.9.0
+numpy==1.24.3
+pandas==1.5.3
+ruamel.base==1.0.0
+scikit_learn==1.2.1
+torch==1.12.1
+tqdm==4.64.1
