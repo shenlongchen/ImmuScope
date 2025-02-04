@@ -41,7 +41,7 @@ The following data and model weights are available at [Zenodo](https://zenodo.or
   ImmuScope input.
 - `data/im_datasets`: Immunogenicity training and testing data applied to ImmuScope input and raw data.
 
-- `weights/EL`: model weights for predicting antigen presentation & binding specificity discovery & MA data
+- `weights/EL`: model weights for predicting antigen presentation & binding specificity discovery & multi-allelic data
   binding motif deconvolution.
 - `weights/CD4`: model weights for predicting CD4<sup>+</sup> T cell epitope.
 - `weights/IM`: model weights for predicting MHC-II epitope immunogenicity.
@@ -55,7 +55,7 @@ The following data and model weights are available at [Zenodo](https://zenodo.or
   ```bash
   python main_antigen_presentation_5cv.py --data-cnf configs/data.yaml --model-cnf configs/ImmuScope-EL.yaml
   ```
-- Train antigen presentation prediction model based on (SA and MA) eluted ligand data.
+- Train antigen presentation prediction model based on (single-allelic and multi-allelic) eluted ligand data.
 
   ```bash
   python main_antigen_presentation_train.py --data-cnf configs/data.yaml --model-cnf configs/ImmuScope-EL.yaml
