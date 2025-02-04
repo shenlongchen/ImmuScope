@@ -5,8 +5,8 @@ This repository contains the source code for the paper **Self-iterative multiple
 
 ![model](./model.png)
 
-ImmuScope, a **weakly supervised deep-learning framework** tailored for large-scale immunopeptidomics datasets, combining
-**self-iterative multiple-instance learning (MIL)** and **triplet loss** to improve predictions of MHC-II antigen
+ImmuScope, a **weakly supervised deep-learning framework** specifically designed for large-scale immunopeptidomics datasets, combining
+**self-iterative multiple-instance learning (MIL)** and **positive-anchor triplet loss** to improve predictions of MHC-II antigen
 presentation, CD4<sup>+</sup> T cell epitopes, and their immunogenicity.
 
 ### Installation
