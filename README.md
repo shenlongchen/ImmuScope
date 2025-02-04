@@ -1,13 +1,13 @@
-## ImmuScope: Unified framework utilizing self-iterative multiple instance learning for predicting CD4+ T cell immunogenic epitope
+## ImmuScope: Self-iterative multiple instance learning enables the prediction of CD4<sup>+</sup> T cell immunogenic epitopes
 
-This repository contains the source code for the paper **Unified framework utilizing self-iterative multiple instance
-learning for predicting CD4+ T cell immunogenic epitope**.
+
+This repository contains the source code for the paper **Self-iterative multiple instance learning enables the prediction of CD4<sup>+</sup> T cell immunogenic epitopes**.
 
 ![model](./model.png)
 
-ImmuScope, a **unified deep-learning framework** tailored for large-scale immunopeptidomics datasets, combining
+ImmuScope, a **weakly supervised deep-learning framework** tailored for large-scale immunopeptidomics datasets, combining
 **self-iterative multiple-instance learning (MIL)** and **triplet loss** to improve predictions of MHC-II antigen
-presentation, CD4+ T cell epitopes, and their immunogenicity.
+presentation, CD4<sup>+</sup> T cell epitopes, and their immunogenicity.
 
 ### Installation
 
@@ -33,17 +33,17 @@ presentation, CD4+ T cell epitopes, and their immunogenicity.
 
 The following data and model weights are available at [Zenodo](https://zenodo.org/records/14184202).
 
-- `data/raw`: Raw data related to antigen presentation and CD4+ T cell epitopes: binding affinity data, EL
-  data, CD4+ T cell epitope benchmarking test data, MHC-II allele list, supported MHC-II pseudo sequences.
+- `data/raw`: Raw data related to antigen presentation and CD4<sup>+</sup> T cell epitopes: binding affinity data, EL
+  data, CD4<sup>+</sup> T cell epitope benchmarking test data, MHC-II allele list, supported MHC-II pseudo sequences.
 - `data/el_datasets`: single- and multi- allelic antigen presentation training data applied
   to ImmuScope input.
-- `data/cd4_datasets`: binding affinity training data and CD4+ T cell epitope benchmarking test data applied to
+- `data/cd4_datasets`: binding affinity training data and CD4<sup>+</sup> T cell epitope benchmarking test data applied to
   ImmuScope input.
 - `data/im_datasets`: Immunogenicity training and testing data applied to ImmuScope input and raw data.
 
 - `weights/EL`: model weights for predicting antigen presentation & binding specificity discovery & MA data
   binding motif deconvolution.
-- `weights/CD4`: model weights for predicting CD4+ T cell epitope.
+- `weights/CD4`: model weights for predicting CD4<sup>+</sup> T cell epitope.
 - `weights/IM`: model weights for predicting MHC-II epitope immunogenicity.
 
 ### Usage
@@ -61,15 +61,15 @@ The following data and model weights are available at [Zenodo](https://zenodo.or
   python main_antigen_presentation_train.py --data-cnf configs/data.yaml --model-cnf configs/ImmuScope-EL.yaml
   ```
 
-#### 2. CD4+ T cell epitope prediction
+#### 2. CD4<sup>+</sup> T cell epitope prediction
 
-- Train CD4+ T cell epitope prediction model based on antigen presentation prediction model.
+- Train CD4<sup>+</sup> T cell epitope prediction model based on antigen presentation prediction model.
 
   ```bash
   python main_cd4_epitope_train.py --data-cnf configs/data.yaml --model-cnf configs/ImmuScope.yaml
   ```
 
-- Test CD4+ T cell epitope prediction model on benchmarking test data.
+- Test CD4<sup>+</sup> T cell epitope prediction model on benchmarking test data.
 
   ```bash
   python main_cd4_epitope_test.py --data-cnf configs/data.yaml --model-cnf configs/ImmuScope.yaml                                 
@@ -91,8 +91,8 @@ The following data and model weights are available at [Zenodo](https://zenodo.or
 ### Citation
 
 ```tex
-Long-Chen Shen, Yumeng Zhang, Zhikang Wang, Yan Liu, Jinghui Tang, Jiangning Song, and Dong-Jun Yu. Unified framework
-utilizing self-iterative multiple instance learning for predicting CD4+ T cell immunogenic epitope
+Long-Chen Shen, Yumeng Zhang, Zhikang Wang, Dene R. Littler, Yan Liu, Jinghui Tang, Jamie Rossjohn, Dong-Jun Yu, and Jiangning Song. Self-iterative multiple instance learning enables the prediction of CD4<sup>+</sup> T cell immunogenic epitopes
+
 ```
 
 ### Contact
