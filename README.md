@@ -91,7 +91,9 @@ The following data and model weights are available at [Zenodo](https://zenodo.or
 ### Citation
 
 ```tex
-Long-Chen Shen, Yumeng Zhang, Zhikang Wang, Dene R. Littler, Yan Liu, Jinghui Tang, Jamie Rossjohn, Dong-Jun Yu, and Jiangning Song. Self-iterative multiple instance learning enables the prediction of CD4<sup>+</sup> T cell immunogenic epitopes
+Long-Chen Shen, Yumeng Zhang, Zhikang Wang, Dene R. Littler, Yan Liu, Jinghui Tang, Jamie Rossjohn,
+Dong-Jun Yu, and Jiangning Song. Self-iterative multiple instance learning enables the prediction
+of CD4<sup>+</sup> T cell immunogenic epitopes
 
 ```
 
