@@ -101,12 +101,16 @@ The following data and model weights are available at [Zenodo](https://zenodo.or
   ```
 
 ### Citation
-
+ImmuScope manuscript is available on [bioRxiv](https://doi.org/10.1101/2025.02.02.636141). If you use ImmuScope for your work, please cite our paper.
 ```tex
-Long-Chen Shen, Yumeng Zhang, Zhikang Wang, Dene R. Littler, Yan Liu, Jinghui Tang,
-Jamie Rossjohn, Dong-Jun Yu, and Jiangning Song. Self-iterative multiple instance
-learning enables the prediction of CD4+ T cell immunogenic epitopes
-
+@article {Shen2025.02.02.636141,
+	author = {Shen, Long-Chen and Zhang, Yumeng and Wang, Zhikang and Littler, Dene R. and Yan, Liu and Tang, Jinhui and Rossjohn, Jamie and Yu, Dong-Jun and Song, Jiangning},
+	title = {Self-iterative multiple instance learning enables the prediction of CD4+ T cell immunogenic epitopes},
+	year = {2025},
+	doi = {10.1101/2025.02.02.636141},
+	publisher = {Cold Spring Harbor Laboratory},
+	journal = {bioRxiv}
+}
 ```
 
 ### Contact
