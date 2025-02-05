@@ -50,14 +50,14 @@ The following data and model weights are available at [Zenodo](https://zenodo.or
 
 #### 1. Antigen presentation prediction
 
-- 5CV for antigen presentation prediction.
+- 5-fold cross validation for antigen presentation prediction.
 
   ```bash
   python main_antigen_presentation_5cv.py \
       --data-cnf configs/data.yaml \
       --model-cnf configs/ImmuScope-EL.yaml
   ```
-- Train antigen presentation prediction model based on (single-allelic and multi-allelic) eluted ligand data.
+- Train antigen presentation prediction model using single- and multi-allelic eluted ligand data.
 
   ```bash
   python main_antigen_presentation_train.py \
@@ -83,7 +83,7 @@ The following data and model weights are available at [Zenodo](https://zenodo.or
       --model-cnf configs/ImmuScope.yaml                                 
   ```
 
-#### 3. Immunogenicity prediction
+#### 3. MHC-II epitope immunogenicity prediction
 
 - Train immunogenicity prediction model with immunogenicity data.
 
