@@ -116,5 +116,5 @@ The ImmuScope manuscript is available on [bioRxiv](https://doi.org/10.1101/2025.
 ### Contact
 
 If you have any questions, please contact us
-at [shenlc1995@njust.edu.cn](mailto:shenlc1995@njust.edu.cn), [jiangning.song@monash.edu](mailto:jiangning.song@monash.edu)
-or [njyudj@njust.edu.cn](mailto:njyudj@njust.edu.cn).
+at [shenlc1995@njust.edu.cn](mailto:shenlc1995@njust.edu.cn), [njyudj@njust.edu.cn](mailto:njyudj@njust.edu.cn)
+or [jiangning.song@monash.edu](mailto:jiangning.song@monash.edu).
