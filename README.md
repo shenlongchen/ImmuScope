@@ -53,12 +53,16 @@ The following data and model weights are available at [Zenodo](https://zenodo.or
 - 5CV for antigen presentation prediction.
 
   ```bash
-  python main_antigen_presentation_5cv.py --data-cnf configs/data.yaml --model-cnf configs/ImmuScope-EL.yaml
+  python main_antigen_presentation_5cv.py \
+      --data-cnf configs/data.yaml \
+      --model-cnf configs/ImmuScope-EL.yaml
   ```
 - Train antigen presentation prediction model based on (single-allelic and multi-allelic) eluted ligand data.
 
   ```bash
-  python main_antigen_presentation_train.py --data-cnf configs/data.yaml --model-cnf configs/ImmuScope-EL.yaml
+  python main_antigen_presentation_train.py \
+      --data-cnf configs/data.yaml \
+      --model-cnf configs/ImmuScope-EL.yaml
   ```
 
 #### 2. CD4<sup>+</sup> T cell epitope prediction
@@ -66,13 +70,17 @@ The following data and model weights are available at [Zenodo](https://zenodo.or
 - Train CD4<sup>+</sup> T cell epitope prediction model based on antigen presentation prediction model.
 
   ```bash
-  python main_cd4_epitope_train.py --data-cnf configs/data.yaml --model-cnf configs/ImmuScope.yaml
+  python main_cd4_epitope_train.py \
+      --data-cnf configs/data.yaml \
+      --model-cnf configs/ImmuScope.yaml
   ```
 
 - Test CD4<sup>+</sup> T cell epitope prediction model on benchmarking test data.
 
   ```bash
-  python main_cd4_epitope_test.py --data-cnf configs/data.yaml --model-cnf configs/ImmuScope.yaml                                 
+  python main_cd4_epitope_test.py \
+      --data-cnf configs/data.yaml \
+      --model-cnf configs/ImmuScope.yaml                                 
   ```
 
 #### 3. Immunogenicity prediction
@@ -80,12 +88,16 @@ The following data and model weights are available at [Zenodo](https://zenodo.or
 - Train immunogenicity prediction model with immunogenicity data.
 
   ```bash
-  python main_immunogenicity_train.py --data-cnf configs/data.yaml --model-cnf configs/ImmuScope-IM.yaml
+  python main_immunogenicity_train.py \
+      --data-cnf configs/data.yaml \
+      --model-cnf configs/ImmuScope-IM.yaml
   ```
 - Test immunogenicity prediction model on immunogenicity data.
 
   ```bash
-  python main_immunogenicity_test.py --data-cnf configs/data.yaml --model-cnf configs/ImmuScope-IM.yaml
+  python main_immunogenicity_test.py \
+      --data-cnf configs/data.yaml \
+      --model-cnf configs/ImmuScope-IM.yaml
   ```
 
 ### Citation
