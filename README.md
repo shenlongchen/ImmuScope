@@ -3,13 +3,18 @@
 
 This repository contains the source code for the paper **[Self-iterative multiple instance learning enables the prediction of CD4<sup>+</sup> T cell immunogenic epitopes](https://doi.org/10.1101/2025.02.02.636141)**.
 
+- [Installation](#installation)
+- [Data and model weights](#data-and-model-weights)
+- [Usage](#usage)
+- [Citation](#citation)
+- [Contact](#contact)
 ![model](./model.png)
 
 ImmuScope, a **weakly supervised deep-learning framework** specifically designed for large-scale immunopeptidomics datasets, combining
 **self-iterative multiple-instance learning (MIL)** and **positive-anchor triplet loss** to improve predictions of MHC-II antigen
 presentation, CD4<sup>+</sup> T cell epitopes, and their immunogenicity.
 
-### Installation
+## Installation
 
 1. Clone the repository.
 
@@ -29,7 +34,7 @@ presentation, CD4<sup>+</sup> T cell epitopes, and their immunogenicity.
    pip install -r requirements.txt
    ```
 
-### Data and model weights
+## Data and model weights
 
 The following data and model weights are available at [Zenodo](https://doi.org/10.5281/zenodo.14184201).
 
@@ -46,9 +51,9 @@ The following data and model weights are available at [Zenodo](https://doi.org/1
 - `weights/CD4`: model weights for predicting CD4<sup>+</sup> T cell epitope.
 - `weights/IM`: model weights for predicting MHC-II epitope immunogenicity.
 
-### Usage
+## Usage
 
-#### 1. Antigen presentation prediction
+### 1. Antigen presentation prediction
 
 - 5-fold cross validation for antigen presentation prediction.
 
@@ -65,7 +70,7 @@ The following data and model weights are available at [Zenodo](https://doi.org/1
       --model-cnf configs/ImmuScope-EL.yaml
   ```
 
-#### 2. CD4<sup>+</sup> T cell epitope prediction
+### 2. CD4<sup>+</sup> T cell epitope prediction
 
 - Train CD4<sup>+</sup> T cell epitope prediction model based on antigen presentation prediction model.
 
@@ -83,7 +88,7 @@ The following data and model weights are available at [Zenodo](https://doi.org/1
       --model-cnf configs/ImmuScope.yaml                                 
   ```
 
-#### 3. MHC-II epitope immunogenicity prediction
+### 3. MHC-II epitope immunogenicity prediction
 
 - Train immunogenicity prediction model with immunogenicity data.
 
@@ -100,7 +105,7 @@ The following data and model weights are available at [Zenodo](https://doi.org/1
       --model-cnf configs/ImmuScope-IM.yaml
   ```
 
-### Citation
+## Citation
 The ImmuScope manuscript is available on [bioRxiv](https://doi.org/10.1101/2025.02.02.636141). If you use ImmuScope in your work, please cite our paper.
 ```tex
 @article {Shen2025.02.02.636141,
@@ -113,7 +118,7 @@ The ImmuScope manuscript is available on [bioRxiv](https://doi.org/10.1101/2025.
 }
 ```
 
-### Contact
+## Contact
 
 If you have any questions, please contact us
 at [shenlc1995@njust.edu.cn](mailto:shenlc1995@njust.edu.cn), [njyudj@njust.edu.cn](mailto:njyudj@njust.edu.cn)
