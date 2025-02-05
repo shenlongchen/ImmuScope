@@ -31,7 +31,7 @@ presentation, CD4<sup>+</sup> T cell epitopes, and their immunogenicity.
 
 ### Data and model weights
 
-The following data and model weights are available at [Zenodo](https://zenodo.org/records/14184202).
+The following data and model weights are available at [Zenodo](https://doi.org/10.5281/zenodo.14184201).
 
 - `data/raw`: Raw data related to antigen presentation and CD4<sup>+</sup> T cell epitopes: binding affinity data, EL
   data, CD4<sup>+</sup> T cell epitope benchmarking test data, MHC-II allele list, supported MHC-II pseudo sequences.
