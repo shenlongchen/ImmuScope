@@ -66,11 +66,11 @@ In **`ImmuScope-weights.tar.gz`** File:
 ## Repo contents
 ```shell
 ImmuScope/
-│── configs/         # Configuration files (e.g., model parameters, training settings)
-│── data/            # Dataset storage and preprocessing scripts (Extract ImmuScope-data.tar.gz File)
-│── ImmuScope/       # Core project code and implementation
-│── results/         # Experiment outputs (e.g. ImmuScope-EL, ImmuScope-CD4 and ImmuScope-IM) and logs
-│── weights/         # Trained model weights and checkpoints (Extract ImmuScope-weights.tar.gz File)
+│── configs/       # Configuration files (e.g., model parameters, training settings)
+│── data/          # Dataset storage and preprocessing scripts (Extract ImmuScope-data.tar.gz File)
+│── ImmuScope/     # Core project code and implementation
+│── results/       # Experiment outputs (e.g. ImmuScope-EL, ImmuScope-CD4 and ImmuScope-IM) and logs
+│── weights/       # Trained model weights and checkpoints (Extract ImmuScope-weights.tar.gz File)
 |── main_antigen_presentation_5cv.py   # 5-fold cross validation for antigen presentation prediction
 |── main_antigen_presentation_train.py # Train antigen presentation model with eluted ligand data
 |── main_cd4_epitope_train.py          # Train CD4+ T cell epitope prediction model
