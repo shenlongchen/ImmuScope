@@ -41,9 +41,8 @@ Accurately predicting the antigen presentation to CD4<sup>+</sup> T cells and su
 
 ## Data and model weights
 
-The following data and model weights are available at <img src="https://doi.org/10.5281/zenodo.14184201.svg" alt="Zenodo" width="100">.
+The following data and model weights are available at [Zenodo](https://doi.org/10.5281/zenodo.14184201.svg).
 
-[Zenodo](https://doi.org/10.5281/zenodo.14184201.svg)
    ```bash
    tar -xvzf ImmuScope-data.tar.gz
    tar -xvzf ImmuScope-weights.tar.gz
@@ -110,7 +109,7 @@ ImmuScope/
       --model-cnf configs/ImmuScope.yaml
   ```
 
-- Test CD4<sup>+</sup> T cell epitope prediction model on benchmarking test data.
+- Test CD4<sup>+</sup> T cell epitope prediction model on benchmarking test data (trained model weights are available in **`weights/CD4`**).
 
   ```bash
   python main_cd4_epitope_test.py \
@@ -127,7 +126,7 @@ ImmuScope/
       --data-cnf configs/data.yaml \
       --model-cnf configs/ImmuScope-IM.yaml
   ```
-- Test immunogenicity prediction model on immunogenicity data.
+- Test immunogenicity prediction model on immunogenicity data (trained model weights are available in **`weights/IM`**).
 
   ```bash
   python main_immunogenicity_test.py \
