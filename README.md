@@ -71,12 +71,12 @@ ImmuScope/
 │── ImmuScope/     # Core project code and implementation
 │── results/       # Experiment outputs (e.g. ImmuScope-EL, ImmuScope-CD4 and ImmuScope-IM) and logs
 │── weights/       # Trained model weights and checkpoints (Extract ImmuScope-weights.tar.gz File)
-|── main_antigen_presentation_5cv.py   # 5-fold cross validation for antigen presentation prediction
-|── main_antigen_presentation_train.py # Train antigen presentation model with eluted ligand data
-|── main_cd4_epitope_train.py          # Train CD4+ T cell epitope prediction model
-|── main_cd4_epitope_test.py           # Test CD4+ T cell epitope prediction model
-|── main_immunogenicity_train.py       # Train immunogenicity prediction model
-|── main_immunogenicity_test.py        # Test immunogenicity prediction model
+│── main_antigen_presentation_5cv.py   # 5-fold cross validation for antigen presentation prediction
+│── main_antigen_presentation_train.py # Train antigen presentation model with eluted ligand data
+│── main_cd4_epitope_train.py          # Train CD4+ T cell epitope prediction model
+│── main_cd4_epitope_test.py           # Test CD4+ T cell epitope prediction model
+│── main_immunogenicity_train.py       # Train immunogenicity prediction model
+│── main_immunogenicity_test.py        # Test immunogenicity prediction model
 │── README.md        # Project documentation
 │── requirements.txt # List of dependencies
 ```
